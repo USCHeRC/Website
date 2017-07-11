@@ -7,17 +7,19 @@ order: 5
 type: top-level
 ---
 
+<!-- smaller jpg used for fast page load, full-sized used on-click -->
+<!-- created with photoshop batch action -->
 
-  {%for post in site.data.posters%}
-    <a title="View in a New Window" target="_blank" href="/images/posters/jpg/{{post.jpg}}"/>
+{%for post in site.data.posters%}
+
+  <a title="View full size image in a new tab" target="_blank" href="/assets/posters/full_jpg/{{post.jpg}}" />
     <h4>{{post.title}}</h4>
-    </a>
-    <a title="View in a New Window" target="_blank" href="/images/posters/jpg/{{post.jpg}}"/>
-      <img style="border: 1px solid #ccc" src="/images/posters/jpg/{{post.jpg}}"/>
-    </a>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-  {% endfor %}
+  </a>
+
+  <a title="View full size image in a new tab" target="_blank" href="/assets/posters/full_jpg/{{post.jpg}}" />
+    <img class="poster" src="/assets/posters/small_jpg/{{post.jpg}}" />
+  </a>
+
+  <br><br><br><br><br>
+
+{% endfor %}

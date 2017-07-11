@@ -10,18 +10,21 @@ type: top-level
 
 
 {% for p in site.data.projects %}
-  <div class="project_block">
-    <div class="project_header">
-      <div class="project_funder">
-        <img src="/images/{{p.image}}" class="project_funder">
+  <div class="proj-block">
+    <div class="proj-header">
+      <div class="proj-imgwrap">
+        <img src="/assets/img/{{p.image}}" />
       </div>
-      <div class="project_title">
-        {% if p.link != "" %}<a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1421059">{% endif %}
-        <h4>{{ p.title }}</h4>
-        {% if p.link  != "" %}</a>{% endif %}
+      <div class="proj-title">
+        {% if p.link != "" %}
+          <a target="_blank" href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1421059">
+            <h4>{{ p.title }}</h4>
+          </a>
+        {% else %}
+          <h4>{{ p.title }}</h4>
+        {% endif %}
       </div>
     </div>
     {{ p.description }}
   </div>
 {% endfor %}
-

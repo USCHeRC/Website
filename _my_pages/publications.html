@@ -6,30 +6,32 @@ permalink: /publications/
 order: 1
 type: top-level
 ---
-<table class="publications">
+<table>
 
 {% for p in site.data.publications %}
   {% if p.year != last_year %}
     {% assign last_year = p.year %}
-    <tr style="border-bottom:1px solid #333"><td colspan="2" class="year"><h3>{{last_year}}<h3></td></tr>
+    <tr><td class="pubs-year" colspan="2"><h3>{{last_year}}</h3></td></tr>
   {% endif %}
 
 
-  <tr><td colspan="2" class="pub-title" style="Font-family:Garamond; padding-top:20px"><i>{{p.title}}</i></td></tr>
+  <tr><td colspan="2" class="pubs-title">{{p.title}}</td></tr>
+
   <tr>
-    <td class="pub-label">publication:</td>
-    <td class="source">{{p.source}}</td>
+    <td class="pubs-label">publication:</td>
+    <td>{{p.source}}</td>
   </tr>
+
   <tr>
-    <td class="pub-label">authors:</td>
-    <td class="authors">{{p.authors}}</td>
+    <td class="pubs-label">authors:</td>
+    <td>{{p.authors}}</td>
   </tr>
   {% if p.download != "" %}
     <tr>
-      <td class="pub-label">document:</td>
-      <td colspan="2" class="download"> [
-        <a target="_blank" href="/papers/{{p.download}}" title="View PDF">
-          <img style="text-decoration:none" class="pub-pdf" src="/images/pdf_icon.gif" alt="PDF Document">View the PDF</a>
+      <td class="pubs-label">document:</td>
+      <td colspan="2">[
+        <a target="_blank" href="/assets/papers/{{p.download}}" title="View PDF">
+          <img class="pubs-pdf" src="/assets/img/pdf_icon.gif" alt="PDF Document">View the PDF</a>
       ] </td>
     </tr>
   {% endif %}

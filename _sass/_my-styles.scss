@@ -1,43 +1,60 @@
-.my_slides {display:none;}
 
-.page-content .wrapper{
-  min-height: 85vh;
-}
-.w3-content{max-width:980px;margin:auto}
-.w3-section{margin-top:16px!important;margin-bottom:16px!important}
 
-img.textbook_cover {
-	width: 300px;
-	padding-right: 50px;
-	float: left;
+/**************************************
+ * Home Page
+ *
+ *************************************/
+/* do not break lines in mobile view*/
+.top h2, .top td{
+  white-space:nowrap;
 }
 
+h4.home-usc{
+  font-size:130%;
+  margin-bottom:0;
+}
 
-div.polaroid {
-  width: 200px;
-  height: 275px;
-  background-color: white;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin-bottom: 25px;
-  margin-left: 20px;
-  margin-right: 20px;
-  float: left;
-  height:100%;
+h3.home-usc{
+  font-size:90%;
+  margin-bottom:10;
+}
+
+ul.home-news li{
+  margin-bottom:15px;
+}
+
+img.home-profile {
+  height: auto;
+	width: 170px;
+  box-shadow: 0px 6px 20px 0px rgba(0,0,0,0.75);
+  border-top-left-radius: 50% 50%;
+  border-top-right-radius: 50% 50%;
+  border-bottom-right-radius: 50% 50%;
+  border-bottom-left-radius: 50% 50%;
 }
 
 
-div.my_container {
-  text-align: center;
-  padding: 10px;
+
+
+/**************************************
+ * Publications
+ *
+ *************************************/
+td.pubs-year{
+  border-bottom:1px solid #333;
+  font-family:'Trebuchet MS', Helvetica, sans-serif;
 }
 
-td.pub-title{
+td.pubs-title{
+  font-family:Georgia, serif;
   font-weight:bold;
   font-size:110%;
+  font-style:italic;
   padding-left:10px;
+  padding-top:20px;
 }
 
-td.pub-label{
+td.pubs-label{
   color:#444;
   font-weight:bold;
   padding-right:10px;
@@ -46,17 +63,19 @@ td.pub-label{
   vertical-align:top;
 }
 
-td.pub-download{
-  padding-left:10px;
-}
-
-img.pub-pdf{
+img.pubs-pdf{
   text-decoration:none;
   padding-right:10px;
 }
 
 
-div.project_block {
+
+
+/**************************************
+ * Projects
+ *
+ *************************************/
+div.proj-block {
 	clear: both;
 	display: block;
 	border-left-style: solid;
@@ -64,55 +83,167 @@ div.project_block {
 	border-left-width: 7px;
 	padding: 20px;
 	margin: 20px;
+  margin-bottom:80px;
 	box-shadow: 5px 5px 25px 1px #888888;
 	width: 80%;
 }
 
-div.project_header {
+div.proj-header {
 	clear: both;
 	display: table;
 }
 
-
-div.project_funder {
-  width:30%;
+div.proj-title {
+	vertical-align: middle;
+	display: table-cell;
 }
 
-img.project_funder {
+div.proj-imgwrap{
+  width:30%;
+	display: table-cell;
+}
+
+.proj-imgwrap img{
   width:100%;
 	clear: left;
 	padding-bottom: 30px;
 	padding-right: 20px;
 }
 
-div.project_funder {
-	display: table-cell;
+
+
+
+/**************************************
+ * Group
+ *
+ *************************************/
+
+/* used in /_templates/default.html to overlay heRC logo */
+.translucent{
+  background:rgba(255,255,255, 0.5);
 }
 
-div.project_title {
-	vertical-align: middle;
-	display: table-cell;
+/* used in /_inclues/page.html to display heRC logo */
+.group-body{
+  background-image: url("/assets/img/herc_logo.jpg");
+  background-attachment: fixed;
+  background-position:center 60px;
+  background-repeat: no-repeat;
+  background-size:contain;
 }
 
-img.home {
-  height: auto;
-	width: 170px;
-  border-top-left-radius: 50% 50%;
-  border-top-right-radius: 50% 50%;
-  border-bottom-right-radius: 50% 50%;
-  border-bottom-left-radius: 50% 50%;
+/* used to form boxes around the group elements */
+div.group {
+  background-color: #FFF;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+  padding:20px;
+  padding-bottom:5px;
 }
 
-.home p{
-  margin-left:20px;
+div.polaroid {
+  max-width: 200px;
+  max-height: 290px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+  margin-bottom: 25px;
+  margin-left: 20px;
+  float: left;
+  height:100%;
 }
 
+/* text under the photographs */
+div.my_container {
+  text-align: center;
+  padding: 10px;
+}
+
+
+
+
+/**************************************
+ * Talks: No styles added
+ *
+ *************************************/
+
+
+
+
+/**************************************
+ * Posters
+ *
+ *************************************/
+img.poster{
+  border: 1px solid #ccc;
+}
+
+
+
+
+/**************************************
+ * Textbook
+ *
+ *************************************/
 #textbook p{
   text-align:justify;
   text-justify: inter-word;
   margin-bottom:30px;
 }
 
-.news li{
-  margin-bottom:15px;
+img.textbook_cover {
+	width: 300px;
+	padding-right: 50px;
+	float: left;
 }
+
+a.amazon{
+  margin-left:10%;
+  text-decoration:none;
+}
+
+.amazon img{
+  width:20%;
+}
+
+
+
+/**************************************
+ * Adjustment for longer nav
+ * Keeps everything on one line with
+ *   different resolutions
+ * Other option would be a dropdown
+ *   arrow for two items at a mid-resolution
+ *************************************/
+@media(max-width:992px){
+   .nav>li>a{
+     padding-left:10px;
+     padding-right:10px;
+   }
+}
+
+
+
+
+/**************************************
+ * Other:
+ * I'm not sure if all the classes
+ *   below exist.
+ * I think someone pasted some in here
+ *   from the other project
+ * Are there slides here?
+ * There are slides in the other project.
+ * I don't have time.
+ *
+ *************************************/
+.my_slides {display:none;}
+
+.page-content .wrapper{
+  min-height: 85vh;
+}
+.w3-content{
+  max-width:980px;margin:auto;
+}
+.w3-section{
+  margin-top:16px!important;
+  margin-bottom:16px!important
+}
+

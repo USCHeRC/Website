@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
   {% include head.html %}
-  <body>
+  <body {% if page.title == "Group" %} class="group-body" {% endif %}>
     {% include header.html %}
-    <div class="page-content">
+    <div class="page-content translucent">
       <div class="wrapper">
         {{ content }}
       </div>
