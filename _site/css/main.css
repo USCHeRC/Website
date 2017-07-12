@@ -6371,7 +6371,7 @@ div.proj-imgwrap {
 .group-body {
   background-image: url("/assets/img/herc_logo.jpg");
   background-attachment: fixed;
-  background-position: center 60px;
+  background-position: 0 60px;
   background-repeat: no-repeat;
   background-size: contain; }
 
