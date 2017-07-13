@@ -17,7 +17,7 @@
 
 
 
-- title       : High-Level Synthesis of a Genomic Database Search Enginek
+- title       : High-Level Synthesis of a Genomic Database Search Engineering
   year        : 2016
   source      : Proc. 2016 International Conference on Reconfigurable Computing and FPGAs (ReConFig 2016).
   authors     : Rasha Karakchi, Jordan Bradshaw, Jason D. Bakos
@@ -29,7 +29,7 @@
   year        : 2016
   source      : Proc. 24th IEEE International Symposium on Field-Programmable Custom Computing Machines.
   authors     : Jordan Bradshaw, Rasha Karakchi, Jason D. Bakos
-  download    : ""
+  download    : fccm16_paper.pdf 
 
 
 
