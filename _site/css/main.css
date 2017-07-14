@@ -6278,10 +6278,11 @@ pre {
   white-space: nowrap; }
 
 h3.home-usc {
+  font-size: 130%;
   margin-bottom: 0; }
 
 h4.home-usc {
-  font-size: 90%;
+  font-size: 100%;
   margin-bottom: 10px; }
 
 ul.home-news li {
