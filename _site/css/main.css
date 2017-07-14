@@ -6277,12 +6277,13 @@ pre {
 .top h2, .top td {
   white-space: nowrap; }
 
-h3.home-usc {
+h4.home-usc {
+  font-size: 130%;
   margin-bottom: 0; }
 
-h4.home-usc {
+h3.home-usc {
   font-size: 90%;
-  margin-bottom: 10px; }
+  margin-bottom: 10; }
 
 ul.home-news li {
   margin-bottom: 15px; }
