@@ -5,11 +5,16 @@ layout: default
 
   {% if page.heading %}
     <header class="post-header">
+      <!--
       {% if page.title == "Group" %}
         <div class="group"><h2> {{ page.heading }}</h2></div>
       {% else %}
         <h2> {{ page.heading }}</h2>
       {% endif %}
+    -->
+
+    <!-- this line is the new change -->
+      <div class="group"><h2> {{ page.heading }}</h2></div>
       <br>
   </header>
   {% endif %}
